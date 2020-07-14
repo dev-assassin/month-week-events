@@ -1,0 +1,49 @@
+{
+  "version": 5.0,
+  "orders": [
+    {
+      "date": "2020-05-13 20:10:10",
+      "order_definition_id": "1",
+      "id": "5",
+      "type": "eCare",
+      "reference_id": "interval_0",
+      "status": "INITIAL"
+    },
+    {
+      "date": "2020-07-22 20:10:10",
+      "order_definition_id": "2",
+      "id": "6",
+      "type": "eCare",
+      "reference_id": "interval_0",
+      "status": "INITIAL"
+    },
+    {
+      "date": "2020-01-15 20:10:10",
+      "order_definition_id": "1",
+      "id": "3",
+      "type": "eCare",
+      "reference_id": "interval_0",
+      "status": "INITIAL"
+    },
+    {
+      "date": "2019-07-22 20:10:10",
+      "order_definition_id": "2",
+      "id": "4",
+      "type": "eCare",
+      "reference_id": "interval_0",
+      "status": "INITIAL"
+    },
+    {
+      "date": "2019-09-22 20:10:10",
+      "order_definition_id": "2",
+      "id": "5",
+      "type": "eCare",
+      "reference_id": "interval_0",
+      "status": "INITIAL"
+    }
+  ],
+  "interval_type": "MONTHLY",
+  "intervals": "12",
+  "id": "ucla-1",
+  "treatment_id": "1"
+}

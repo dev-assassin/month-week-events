@@ -1,0 +1,46 @@
+<div class="container">
+
+  <div class="week color-gray">
+    <b class="flex-row">
+      Week
+    </b>
+  </div>
+
+  <div class="calendar-container flex-column">
+    <div class="flex-row space-between">
+      <span class='week-class flex-column background-light-gray'>Now</span>
+      <span *ngFor="let week of weeks;" class="week-class flex-column background-light-gray">
+       {{week}}
+      </span>
+    </div>
+
+    <!-- EVENTS -->
+    <div class="flex-row space-between">
+      <!-- NOW -->
+      <span class='event-class-weekly'>
+        <span (click)="showInfo(event)" *ngFor="let event of getEventsForWeek(0);"
+              class="flex-column center">
+          <div class="vl"></div>
+         <img src='{{defaultIconPath}}{{getImageForEvent(event)}}'>
+        </span>
+      </span>
+      <!-- 1-12 -->
+      <span *ngFor="let week of weeks;let i = index" class="event-class-weekly">
+        <div *ngIf="getEventsForWeek(i).length == 0" class="flex-column"></div>
+        <span (click)="showInfo(event)" *ngFor="let event of getEventsForWeek(week);"
+              class="flex-column center">
+          <div class="vl"></div>
+         <img src='{{defaultIconPath}}{{getImageForEvent(event)}}'>
+        </span>
+      </span>
+    </div>
+  </div>
+
+  <!-- LEGEND -->
+  <div class='legend background-light-gray rounded-borders flex space-between padding-legend margin-top-20 flex-wrap'>
+    <span *ngFor='let key of types' class='flex align-flex-end'>
+      <img src='{{defaultIconPath}}{{typesMap.get(key)}}' class='margin-right-8'>
+      <span>{{key}} </span>
+    </span>
+  </div>
+</div>

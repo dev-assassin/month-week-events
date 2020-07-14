@@ -1,0 +1,39 @@
+<div class="container">
+
+  <div class="year text-center">
+    <b class="flex-row">
+      <mat-icon (click)="yearBack()" class="orange-text pointer"> keyboard_arrow_left</mat-icon>
+      {{currentYear}}
+      <mat-icon (click)="yearForward()" class="orange-text pointer"> keyboard_arrow_right</mat-icon>
+    </b>
+  </div>
+
+  <div class="indicator-month">
+    <div *ngIf="currentYear == dateNow.getFullYear()">
+    </div>
+  </div>
+
+  <div class="calendar-container flex-column">
+    <div class="months background-light-gray flex-row space-between">
+      <span *ngFor="let month of months; let i = index" class="month-class flex-column">
+        <span *ngIf="(currentYear==dateNow.getFullYear()) && (i == dateNow.getMonth())" class="mt-minus-28">
+          <mat-icon class="orange-text">arrow_drop_down</mat-icon>
+        </span>
+        {{month}}
+      </span>
+    </div>
+
+
+    <div class="events-container flex-row space-between padding-side-10">
+      <span *ngFor="let month of months" class="event-class margin-left-5">
+        <div *ngIf="getEventsForMonth(month).length == 0" class="width-24"></div>
+        <span (click)="showInfo(event)" *ngFor="let event of getEventsForMonth(month);"
+              class="flex-column">
+          <div class="vl margin-left-12"></div>
+          <mat-icon
+            [ngClass]="[getColorClass(event), 'icon', 'pointer', 'material-icons','large']">{{getMatIconForEvent(event)}}</mat-icon>
+        </span>
+      </span>
+    </div>
+  </div>
+</div>

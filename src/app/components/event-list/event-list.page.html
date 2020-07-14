@@ -1,0 +1,5 @@
+<div class="margin-side-25">
+  BLABLA
+  <monthly-calendar *ngIf='calendarType=="MONTHLY"' [events]="events$|async"></monthly-calendar>
+  <weekly-calendar *ngIf='calendarType=="WEEKLY"' [events]="events$|async" [setInterval]='interval'></weekly-calendar>
+</div>

@@ -1,0 +1,11 @@
+export const WEEK_TYPES = new Map<string, string>();
+WEEK_TYPES.set('Clinic', 'clinic/clinic@2x.png');
+WEEK_TYPES.set('Labs', 'labs/labs@2x.png');
+WEEK_TYPES.set('Radiology', 'radiology/radiology@2x.png');
+WEEK_TYPES.set('Pathology', 'pathology/pathology@2x.png');
+WEEK_TYPES.set('Endoscopy', 'endoscopy/endoscopy@2x.png');
+WEEK_TYPES.set('eCare', 'ecare/ecare@2x.png');
+WEEK_TYPES.set('My Coach', 'my-coach/my-coach@2x.png');
+WEEK_TYPES.set('Surgery', 'surgery/surgery@2x.png');
+WEEK_TYPES.set('Post Sugnery Self Assessment', 'post-sugnery-self-assessment/post-sugnery-self-assessment@2x.png');
+WEEK_TYPES.set('My Menu', 'my-menu/my-menu@2x.png');

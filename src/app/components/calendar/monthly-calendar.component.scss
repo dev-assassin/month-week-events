@@ -1,0 +1,126 @@
+.flex {
+  display: flex;
+}
+
+.mt-minus-28 {
+  margin-top: -28px;
+}
+
+.months {
+  padding: 7px 10px;
+  border-radius: 20px;
+}
+
+.padding-side-10 {
+  padding: 0 10px;
+}
+
+.vl {
+  border-left: 2px solid lightgray;
+  height: 25px;
+}
+
+.margin-left-12 {
+  margin-left: 12px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.background-light-gray {
+  background: lightgray;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.width-100 {
+  width: 100%;
+  border: 1px solid lightgray;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-class {
+}
+
+.orange-text {
+  color: #fc8c14;
+}
+
+.orange-background {
+  background: linear-gradient(180deg, #fc8c14 0, #f77d0e);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.year {
+  font-size: 25px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.width-24 {
+  width: 24px;
+}
+
+.month-class {
+  width: 24px;
+}
+
+.color-purple {
+  color: #592981;
+}
+
+.color-pink {
+  color: #ee1271;
+}
+
+.event-class-weekly {
+  width: 140px;
+}
+
+.mr-4:not(:last-of-type) {
+  margin-right: 4px;
+
+}
+
+.bordered-radius {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.week-class {
+  width: 24px;
+  padding: 5px 58px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.center {
+  align-items: center;
+}
